@@ -62,6 +62,18 @@
           <div>
             <button class="button secondary" id="Start">Start</button>
           </div>
+          
+          <script>
+            const button = document.getElementById('Start');
+            
+            button.addEventListener('click', function() {
+              if (button.textContent === 'Start') {
+                button.textContent = 'Stop';
+              } else {
+                button.textContent = 'Start';
+              }
+            });
+          </script>
         </div>
         <div class="slider-container">
           <div class="slider-box"><label for="speed_change">Nozzle Open: <span class="slider-value" id="speed">2
